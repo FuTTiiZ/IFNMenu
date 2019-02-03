@@ -1,0 +1,33 @@
+<div class="page" ng-controller="ControllerIfn">
+
+  <div class="options">
+
+    <ul>
+
+      <li><img ng-src='../html/img/logo4.png' /></li>
+      <li>&nbsp;</li>
+      <li ng-show="InGame"><a ng-click="BackToGame()" ng-Tranny="'resume_game'"></a></li>
+      <li ng-show="InGame">&nbsp;</li>
+      <li><a ng-href="#/newgame/" ng-Tranny="'Singleplayer'"></a></li>
+      <li><a ng-href="#/servers/" ng-Tranny="'Multiplayer'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a style="color: #024e84" ng-href="#/mservers/" ng-Tranny="'Main Servers'"></a></li>
+      <li><a style="color: #843301" ng-href="#/eservers/" ng-Tranny="'Event Servers'"></a></li>
+      <li><a style="color: #845300" ng-href="#/links/" ng-Tranny="'Links'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a ng-click="MenuOption( this, 'OpenOptionsDialog')" ng-Tranny="'options'"></a></li>
+      <li><a ng-href="#/default/" ng-Tranny="'Default Menu'"></a></li>
+
+      <li>&nbsp;</li>
+      <li ng-show="InGame">
+        <a ng-click="MenuOption( this, 'engine disconnect');" ng-Tranny="'disconnect'"></a>
+      </li>
+      <li><a ng-click="MenuOption( this, 'Quit')" ng-Tranny="'quit'"></a></li>
+
+    </ul>
+
+  </div>
+
+</div>

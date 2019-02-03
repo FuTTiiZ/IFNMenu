@@ -1,0 +1,31 @@
+<div class="page" ng-controller="ControllerIfn">
+
+  <div class="options">
+
+    <ul>
+
+      <li><img ng-src='../html/img/logo4.png' /></li>
+      <li>&nbsp;</li>
+      <li ng-show="InGame"><a ng-click="BackToGame()" ng-Tranny="'resume_game'"></a></li>
+      <li ng-show="InGame">&nbsp;</li>
+      <li><a ng-href="#/newgame/" ng-Tranny="'Singleplayer'"></a></li>
+      <li><a ng-href="#/servers/" ng-Tranny="'Multiplayer'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a ng-click="JoinServer( '208.103.169.41:27016' )" ng-Tranny="'Clone Wars'"></a></li>
+      <li><a ng-click="JoinServer( '208.103.169.41:27018' )" ng-Tranny="'Imperial'"></a></li>
+      <li><a ng-click="JoinServer( '208.103.169.42:27020' )" ng-Tranny="'Military'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a style="color: #428400" ng-href="#/" ng-Tranny="'Back'"></a></li>
+
+      <li>&nbsp;</li>
+      <li ng-show="InGame">
+        <a ng-click="MenuOption( this, 'engine disconnect');" ng-Tranny="'disconnect'"></a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>

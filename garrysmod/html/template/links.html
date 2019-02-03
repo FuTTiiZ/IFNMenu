@@ -1,0 +1,32 @@
+<div class="page" ng-controller="ControllerIfn">
+
+  <div class="options">
+
+    <ul>
+
+      <li><img ng-src='../html/img/logo4.png' /></li>
+      <li>&nbsp;</li>
+      <li ng-show="InGame"><a ng-click="BackToGame()" ng-Tranny="'resume_game'"></a></li>
+      <li ng-show="InGame">&nbsp;</li>
+      <li><a ng-href="#/newgame/" ng-Tranny="'Singleplayer'"></a></li>
+      <li><a ng-href="#/servers/" ng-Tranny="'Multiplayer'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a ng-click="OpenUrl( 'https://steamcommunity.com/groups/Icefuse-Networks' )" ng-Tranny="'Steam Group'"></a></li>
+      <li><a ng-click="OpenUrl( 'https://steamcommunity.com/id/icefuse_networks/myworkshopfiles/?section=collections' )" ng-Tranny="'Addons'"></a></li>
+      <li><a ng-click="OpenUrl( 'https://icefuse.net/forums/' )" ng-Tranny="'Forums'"></a></li>
+      <li><a ng-click="OpenUrl( 'https://store.icefuse.net/' )" ng-Tranny="'Store'"></a></li>
+
+      <li>&nbsp;</li>
+      <li><a style="color: #428400" ng-href="#/" ng-Tranny="'Back'"></a></li>
+
+      <li>&nbsp;</li>
+      <li ng-show="InGame">
+        <a ng-click="MenuOption( this, 'engine disconnect');" ng-Tranny="'disconnect'"></a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
